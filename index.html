@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 78</title>
+</head>
+<body>
+    <h1>FAMILY BOOK</h1>
+    <img src="https://www.pngitem.com/pimgs/m/120-1203252_clip-art-mom-png-for-mother-cartoon-png.png" id="Image1">
+    <hr>
+    <h4 id="h4">Mom</h4>
+    <hr> 
+    <button onclick="next()">Next</button>
+    <script>
+// arrays
+var images=["https://www.how-to-draw-funny-cartoons.com/images/cartoon-dad-005.jpg", "https://t3.ftcdn.net/jpg/00/37/57/94/360_F_37579450_T7mIpY44sGaJBVk4rOD8Tg3Wi8t8WQfq.jpg","https://image.shutterstock.com/image-vector/vector-cartoon-illustration-iyer-aunty-260nw-1138205381.jpg"];
+
+var reasons=["2. dad","3. aunt","4. mami ji"];
+
+//index
+var counter=0;
+
+//function
+function next(){
+  document.getElementById("Image1").src=images[counter];
+  document.getElementById("h4").innerHTML=reasons[counter];
+  counter++;
+  
+  // to repeat your array we need to make counter back to 0
+  if(counter==5){
+    counter=0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
